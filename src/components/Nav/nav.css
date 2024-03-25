@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Nav.css */
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  padding: 8px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: var(--primaryColor);
+  box-shadow: 0 2px 15px rgb(0,0,0);
+  /* added code from default styling to make the nav bar start in the top left corner */
+  top: 0;
+  left: 0;
+}
+
+.navbar-container h1 {
+  font-size: 25px;
+  padding: 8px 15px;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+}
+.JHill {
+  animation: slideRight 1s ease forwards;
+  color: #fff;
+  cursor: default;
+  font-weight: 600;
+}
+
+.navbar {
+  background: linear-gradient(hsl(216, 8%, 9%) 5%, hsl(216, 8%, 18%));
+  border-radius: 30px;
+  padding: 12px 15px;
+  /* had to change this height to make it look somewhat the same as when I wasn't using react. */
+  height: 59px;
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 7px 20px;
+  transition: .3s;
+  opacity: 0;  /* this is for the keyframe; so that it's starting position isn't visible right away */
+  animation: slideTop .5s ease forwards;  /* keyframe */
+  /* animation-delay: calc(.1s * var(--i)); */
+  border-radius: 17px;
+}
+.nav-link:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+/*  */
+.active {
+  color: var(--secondaryColor);
+}
+/* vvv this is so that the ends of the nav are equally spaced around the whole curve when hovered */
+.nav-link:nth-of-type(1) {
+  margin: 0 10px 0 0;
+}
+.nav-link:nth-of-type(4) {
+  margin: 0 0 0 10px;
+}
+/* ^^^ this one too */
+
+
+
+
+/* Animations for Nav bar */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+.homep {
+  margin-top: 75px;
+}
+
+.homep h1 {
+  padding: 10px 3px 20px;
+}
+
+#flex-for-homep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right-of-homep p {
+  text-align: left;
+}
+.right-of-homep #DigitalCreator {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+  background: linear-gradient(
+    to right, 
+    #da9b9b,
+    #c7b4dd
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.me-and-social-btns {
+  display: flex;
+  /* grid-template-columns: 5fr 1fr; */
+  justify-content: flex-end;
+}
+
+.social-btns {
+  width: fit-content;
+}
+
+.social-btns a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  margin: 20px 15px;
+  transition: .5s ease;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+.social-btns a:hover {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  box-shadow: 0 0 20px var(--secondaryColor);
+}
+
+#imatextflex {
+  display: flex;
+  transform: translateX(55%);
+}
