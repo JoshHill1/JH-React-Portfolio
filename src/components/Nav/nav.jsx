@@ -7,9 +7,9 @@ function Nav() {
       <h1><Link to="/" className="JHill">J Hill</Link></h1>
       <nav className="navbar">
         <NavLink to="/" className="nav-link" activeClassName="active">Home</NavLink>
-        <Link to="/about" className="nav-link">About</Link>
-        <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/contact" className="nav-link">Contact</Link>
+        <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
+        <NavLink to="/projects" className="nav-link" activeClassName="active">Projects</NavLink>
+        <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
       </nav>
     </div>
   );

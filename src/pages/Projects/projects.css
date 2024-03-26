@@ -1,0 +1,25 @@
+.projectsp {
+  margin-top: 75px;
+}
+
+
+
+#neon-line {
+  left: 0;
+  position: relative;
+  /* transform: translateX(-19%); */
+  width: 1280px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c7b4dd,
+    transparent
+  );
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

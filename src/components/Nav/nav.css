@@ -21,6 +21,10 @@
   left: 0;
 }
 
+.navbar-container a {
+  text-decoration: inherit;
+}
+
 .navbar-container h1 {
   font-size: 25px;
   padding: 8px 15px;

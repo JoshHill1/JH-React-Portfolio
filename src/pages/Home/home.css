@@ -1,14 +1,23 @@
 .homep {
   margin-top: 75px;
+  /* background-color: var(--primaryColor); */
 }
 
 .homep h1 {
-  padding: 10px 3px 20px;
+  color: #FFF;
+  padding: 0;
+  text-align: center;
+  margin-top: 150px;
 }
 
 #flex-for-homep {
+  color: #FFF;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  
+  padding: 2rem;
+  max-width: 1280px;
 }
 
 .right-of-homep p {
@@ -63,6 +72,8 @@
 }
 
 #imatextflex {
+  color: #FFF;
   display: flex;
-  transform: translateX(55%);
+  /* transform: translateX(55%); */
+  margin: 0 0 0 55%;
 }
