@@ -8,10 +8,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Nav from './components/Nav/nav';
 
 //imported pages
-import Home from "./pages/Home/home"; // Updated path with lowercase filename
-import About from "./pages/About/about"; // Updated path with lowercase filename
-import Projects from "./pages/Projects/projects"; // Updated path with lowercase filename
-import Contact from "./pages/Contact/contact"; // Updated path with lowercase filename
+import Home from "./pages/Home/home"; 
+import About from "./pages/About/about"; 
+import Projects from "./pages/Projects/projects"; 
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
 
     </BrowserRouter>

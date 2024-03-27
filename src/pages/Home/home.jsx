@@ -1,6 +1,11 @@
-import mePhoto from "../../assets/images/me.png";
+import React from 'react';
+
 import "./home.css";
 import ImAText from "../../components/ImAText/imatext.jsx"
+
+import FeatProj from "../../components/FeaturedProject/featproj.jsx";
+import projData from '../../data/projData.jsx';
+
 
 function Home() {
   return (
@@ -35,6 +40,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <FeatProj projData={projData} />
     </div>
     
   );

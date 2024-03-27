@@ -8,6 +8,6 @@
 :root {
   --primaryColor: #1e2023;
   --secondaryColor: rgb(79, 199, 255);
-
+  --accent: hsl(199, 79%, 90%);
 }
 
