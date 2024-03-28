@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './projects.css'
 
-import Card from '../../components/Card/card.jsx'
-import '../../components/Card/card.css'
+import ProjectCards from '../../components/ProjectCards/projectcards.jsx'
+import '../../components/ProjectCards/projectcards.css'
 
 import ProjData from '../../data/projData.jsx'
 
@@ -24,13 +24,14 @@ function Projects() {
       {/* More buttons */}
       <div className="cards-container">
         {ProjData
-          .filter(card => filter === 'all' || card.category === filter)
-          .map(card => (
-            <Card
-              key={card.id}
-              imageSrc={card.imageSrc}
-              title={card.title}
-              subtext={card.subtext}
+          .filter(projCard => filter === 'all' || projCard.category === filter)
+          .map(projCard => (
+            <ProjectCards
+              key={projCard.id}
+              imageSrc={projCard.imageSrc}
+              title={projCard.title}
+              category={projCard.category}
+              subtext={projCard.subtext}
             />
           ))}
       </div>

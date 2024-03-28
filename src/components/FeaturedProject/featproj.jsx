@@ -5,19 +5,23 @@ import './featproj.css'
 
 function FeatProj({ projData }) {
   const featuredProjects = projData.filter(project => project.featured);
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const NextProject = () => {
+  const nextProject = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === featuredProjects.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const PreviousProject = () => {
+  const previousProject = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? featuredProjects.length - 1 : prevIndex - 1
     );
+  };
+
+  // Go directly to x project
+  const goToProject = (index) => {
+    setCurrentIndex(index);
   };
 
   // Current project to display
@@ -27,14 +31,26 @@ function FeatProj({ projData }) {
     <div id="whole-featured-projects-section">
       <div className="featured feat-text">
         <h2>Featured Projects</h2>
-        <h3>{currentProject.title}</h3>
-        <h4>{currentProject.category}</h4>
-        <p>{currentProject.subtext}</p>
+        <div id="feat-text-grouped">
+          <h3>{currentProject.title}</h3>
+          <h4>{currentProject.category}</h4>
+          <p>{currentProject.subtext}</p>
+        </div>
       </div>
       <div className="featured feat-carousel">
-        <IoIosArrowBack onClick={PreviousProject}/>
+        <IoIosArrowBack onClick={previousProject} className='arrow arrow-left'/>
         <img src={currentProject.imageSrc} alt={currentProject.title} />
-        <IoIosArrowForward onClick={NextProject}/>
+        <IoIosArrowForward onClick={nextProject} className='arrow arrow-right'/>
+        <div className="indicators">
+          {featuredProjects.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToProject(index)}
+              className={`indicator ${currentIndex === index ? 'indicator-inactive' : ''}`}
+              aria-label={`Go to project ${index + 1}`} >
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

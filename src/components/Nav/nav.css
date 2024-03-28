@@ -40,7 +40,10 @@
 }
 
 .navbar {
-  background: linear-gradient(hsl(216, 8%, 9%) 5%, hsl(216, 8%, 18%));
+  background: linear-gradient(
+    hsl(202, 22%, 7%) 5%, 
+    hsl(202, 22%, 15%)
+  );
   border-radius: 30px;
   padding: 12px 15px;
   /* had to change this height to make it look somewhat the same as when I wasn't using react. */

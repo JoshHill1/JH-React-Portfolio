@@ -10,7 +10,82 @@
   padding: 20px;
 }
 
+.feat-text {
+  color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feat-text h2 {
+  font-size: 4.8rem;
+}
+
 .feat-carousel {
+  width: auto;
+  height: 600px;
   padding: 0;
-  
+  overflow: hidden;
+  /* position relative helps with the arrows and indicator(s) always be in the correct position no matter the screen size */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.feat-carousel img {
+  width: 100%; /* Image is centered */
+  height: 100%; /* Image is centered */
+  object-fit: cover; /* Makes image fit within the border */
+  display: block; /* Removes any default inline spacing */
+  margin: auto; /* This centers the image if it's smaller than the container */
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.arrow:hover {
+  color: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0px 3px 5px rgba(34, 34, 34, 0.5));
+}
+/* vv Positions arrows at the correct side of the image */
+.arrow-left {
+  left: 0rem;
+}
+.arrow-right {
+  right: 0rem;
+}
+
+
+
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  filter: drop-shadow(0px 3px 5px #000);
+}
+
+.indicator {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.indicator:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.indicator-inactive {
+  background-color: rgba(255, 255, 255, 0.8);
 }

@@ -1,23 +1,48 @@
-.projectsp {
-  margin-top: 75px;
+:root {
+  --primaryColor: hsl(201, 20%, 10%);
+  --secondaryColor: #e0ccb6;
+  --accent: #EEF0EB;
 }
 
+.projectsp {
+  margin-top: 75px;
+  text-align: center;
+}
 
+.projectsp h1 {
+  margin-top: 150px;
+  color: #FFF;
+}
+
+.projectsp button {
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 30px 10px;
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: 0.25s ease;
+}
+.projectsp button:hover {
+  transition: 0.5s ease;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  cursor: pointer;
+}
 
 #neon-line {
-  left: 0;
-  position: relative;
-  /* transform: translateX(-19%); */
   width: 1280px;
   height: 3px;
   background: linear-gradient(
     90deg,
     transparent,
-    #c7b4dd,
+    var(--secondaryColor),
     transparent
   );
+  margin: auto;
 }
-
 
 .cards-container {
   display: grid;

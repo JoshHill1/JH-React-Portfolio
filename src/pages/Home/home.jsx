@@ -6,6 +6,7 @@ import ImAText from "../../components/ImAText/imatext.jsx"
 import FeatProj from "../../components/FeaturedProject/featproj.jsx";
 import projData from '../../data/projData.jsx';
 
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
           <p>
             With a passion for web design, my interests also revolve around staying in the loop with trends involving Adobe Photoshop & Illustrator and following best practices for UX/UI. As a former gamer, I bring the same excitement and innovation to my work. I'm eager to explore new challenges and collaborate with teams who share my passion for making the digital world more beautiful and accessible.
           </p>
-          <button>View All of My Work :&#41;</button>
+          <button className='my-work-btn'><Link to="/projects">View My Work</Link></button>
         </div>
         <div className="left-of-homep">
           <div className="me-and-social-btns">

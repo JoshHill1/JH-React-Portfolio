@@ -1,6 +1,5 @@
 .homep {
   margin-top: 75px;
-  /* background-color: var(--primaryColor); */
 }
 
 .homep h1 {
@@ -20,21 +19,48 @@
   max-width: 1280px;
 }
 
-.right-of-homep p {
-  text-align: left;
+.right-of-homep {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .right-of-homep #DigitalCreator {
   text-align: center;
   font-weight: 600;
   font-size: 2em;
   background: linear-gradient(
     to right, 
-    #da9b9b,
-    #c7b4dd
+    #f0be89,
+    #cca5df
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.right-of-homep p {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  padding-bottom: 15px;
+}
+
+.right-of-homep a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.right-of-homep button {
+  width: fit-content;
+  background-color: var(--secondaryColor);
+  border-radius: 7px;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
 
 .me-and-social-btns {
   display: flex;
