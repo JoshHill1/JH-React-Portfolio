@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./home.css";
 import ImAText from "../../components/ImAText/imatext.jsx"
-
+import JHeadshot from '../../assets/images/JHeadshot.png'
 import FeatProj from "../../components/FeaturedProject/featproj.jsx";
 import projData from '../../data/projData.jsx';
 
@@ -13,7 +13,7 @@ function Home() {
     <div className="homep">
       <h1>Hi, I'm Josh</h1>
       <div id="flex-for-homep">
-        <div className="right-of-homep">
+        <div className="left-of-homep">
           <h2 id="DigitalCreator">
             A Digital Creator.
           </h2>
@@ -22,17 +22,24 @@ function Home() {
           </p>
           <button className='my-work-btn'><Link to="/projects">View My Work</Link></button>
         </div>
-        <div className="left-of-homep">
+        <div className="right-of-homep">
           <div className="me-and-social-btns">
-            <img
-              src="https://via.placeholder.com/640x640"
-              alt="A photo of me."
-              style={{ width: "300px", height: "auto" }}
-            />
+            <div className="me-cover">
+              <Link to="/about">
+                <img
+                  className='me-cover-img'
+                  src={JHeadshot}
+                  alt="A photo of me."
+                  />
+              </Link>
+              <div className="learn-more-text-in-headshot">
+                <p>Learn more about me :&#41;</p>
+              </div>
+            </div>
             <div className="social-btns">
-              <a target="_blank" href="https://www.linkedin.com/in/joshuahillaz0d/"><i class='bx bxl-linkedin'></i></a>
-              <a target="_blank" href="https://github.com/JoshHill1"><i class='bx bxl-github'></i></a>
-              <a target="_blank" href="https://www.instagram.com/josh_hil1/"><i class='bx bxl-instagram-alt'></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/joshuahillaz0d/"><i className='bx bxl-linkedin'></i></a>
+              <a target="_blank" href="https://github.com/JoshHill1"><i className='bx bxl-github'></i></a>
+              <a target="_blank" href="https://www.instagram.com/josh_hil1/"><i className='bx bxl-instagram-alt'></i></a>
             </div>
           </div>
           <div id="imatextflex">
