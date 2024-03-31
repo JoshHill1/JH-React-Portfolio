@@ -20,7 +20,7 @@ function Home() {
           <p>
             With a passion for web design, my interests also revolve around staying in the loop with trends involving Adobe Photoshop & Illustrator and following best practices for UX/UI. As a former gamer, I bring the same excitement and innovation to my work. I'm eager to explore new challenges and collaborate with teams who share my passion for making the digital world more beautiful and accessible.
           </p>
-          <button className='my-work-btn'><Link to="/projects">View My Work</Link></button>
+          <Link to="/projects" className='my-work-btn'><button>View My Work</button></Link>
         </div>
         <div className="right-of-homep">
           <div className="me-and-social-btns">
@@ -33,7 +33,7 @@ function Home() {
                   />
               </Link>
               <div className="learn-more-text-in-headshot">
-                <p>Learn more about me :&#41;</p>
+                <p>Learn More About Me :&#41;</p>
               </div>
             </div>
             <div className="social-btns">

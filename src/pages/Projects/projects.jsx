@@ -18,8 +18,8 @@ function Projects() {
     <div className='projectsp'>
       <h1>Projects</h1>
       <button onClick={() => handleFilterChange('all')}>All</button>
-      <button onClick={() => handleFilterChange('category1')}>Category 1</button>
-      <button onClick={() => handleFilterChange('category2')}>Category 2</button>
+      <button onClick={() => handleFilterChange('Digital Art')}>Digital Art</button>
+      <button onClick={() => handleFilterChange('Web Designs')}>Web Designs</button>
       <div id='neon-line'></div>
       {/* More buttons */}
       <div className="cards-container">

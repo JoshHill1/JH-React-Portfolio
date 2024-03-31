@@ -34,8 +34,8 @@ function FeatProj({ projData }) {
         <div id="feat-text-grouped">
           <h3>{currentProject.title}</h3>
           <h4>{currentProject.category}</h4>
-          <p>{currentProject.subtext}</p>
         </div>
+        <p>{currentProject.subtext}</p>
       </div>
       <div className="featured feat-carousel">
         <IoIosArrowBack onClick={previousProject} className='arrow arrow-left'/>

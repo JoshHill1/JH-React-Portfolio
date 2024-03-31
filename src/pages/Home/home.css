@@ -17,6 +17,7 @@
   
   padding: 2rem;
   max-width: 1280px;
+  margin: 22px auto;
 }
 
 .left-of-homep {
@@ -43,22 +44,29 @@
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.8rem;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
+.left-of-homep .my-work-btn {
+  background-color: var(--secondaryColor);
+  padding: 12px 20px;
+  border-radius: 7px;
+  width: fit-content;
+}
 .left-of-homep a {
   text-decoration: none;
   color: var(--primaryColor);
+}
+.left-of-homep button {
   background-color: var(--secondaryColor);
-  padding: 12px;
   font-size: 1.05rem;
-  border-radius: 7px;
 }
 
 .left-of-homep button {
   border: none;
   width: fit-content;
   font-weight: 600;
+  pointer-events: none;
 }
 
 
@@ -91,6 +99,7 @@
   transition: 1s ease;
 }
 .me-cover:hover .me-cover-img {
+  transition: 0.7s ease;
   transform: scale(1.0);
   opacity: 0.3;
 }
@@ -148,5 +157,8 @@
   color: #FFF;
   display: flex;
   /* transform: translateX(55%); */
-  margin: 0 0 0 55%;
+  margin: 10px 0 0 38%;
+  font-weight: 600;
+  font-size: 1.55rem;
+  color: var(--secondaryColor);
 }
