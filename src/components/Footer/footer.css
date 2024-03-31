@@ -1,0 +1,21 @@
+.whole-footer {
+  background-color: var(--accent); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 40px 10% 20px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #000;
+  width: 50%;
+}
+.footer-text a:hover {
+  text-decoration: underline;
+}

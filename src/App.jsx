@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 // imported page components
 import Nav from './components/Nav/nav';
+import Footer from "./components/Footer/footer";
 
 //imported pages
 import Home from "./pages/Home/home"; 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
       </Routes>
 
+      <Footer />
     </BrowserRouter>
   );
 }
