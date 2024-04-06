@@ -29,7 +29,7 @@ function Home() {
                 <img
                   className='me-cover-img'
                   src={JHeadshot}
-                  alt="A photo of me."
+                  alt="A headshot of what I look like."
                   />
               </Link>
               <div className="learn-more-text-in-headshot">

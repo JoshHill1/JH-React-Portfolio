@@ -1,4 +1,4 @@
-import PlainAndSimpleFINAL from "../assets/images/projImages/PlainAndSimple/PlainAndSimpleFinalDesign.png"
+import PlainAndSimpleFINAL from "../assets/images/projImages/PlainAndSimple/PlainAndSimpleFINAL.png"
 import FoodMakerApp from "../assets/images/projImages/FoodMakerApp/FoodMakerApp.png"
 import HTMLPortfolio from "../assets/images/projImages/HTMLPortfolio/HTMLPortfolio.png"
 
@@ -21,7 +21,7 @@ const projData = [
   },
   { 
     id: 3, 
-    category: "Web Design", 
+    category: "Web Designs", 
     imageSrc: HTMLPortfolio, 
     title: "HTML Portfolio", 
     subtext: "This is my first actual portfolio I make using vanilla HTML, CSS, and JavaScript. It helped me learn more about CSS and how to work around the framework that I was looking for, and was a great learning experience before starting this React Portfolio.",

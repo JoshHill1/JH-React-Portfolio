@@ -36,6 +36,7 @@
 #feat-text-grouped h4 {
   font-size: 1.2rem;
   padding-bottom: 20px;
+  color: var(--secondaryColor);
 }
 .feat-text p {
   font-size: 1.2rem;
