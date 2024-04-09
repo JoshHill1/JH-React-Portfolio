@@ -3,7 +3,7 @@ import JoshBodyPhoto from "../../assets/aboutContent/JoshBodyPhoto1.png"
 import OnlyOneInBuilding from "../../assets/aboutContent/OnlyOneInBuilding.mov"
 import WebAuthFinal from "../../assets/aboutContent/WebAuthFinal.png"
 import ASU_Bootcamp_CERT_JH from "../../assets/aboutContent/ASU_Coding_Bootcamp_CERT_Joshua_Hill.png"
-import Skills from "../../components/Skills/skills.jsx"
+// import Skills from "../../components/Skills/skills.jsx"
 
 function About() {
   return (
