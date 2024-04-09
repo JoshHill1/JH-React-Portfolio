@@ -15,8 +15,19 @@
   height: 100%;
   border-radius: 4px 4px 0 0;
   object-fit: cover;
-  
+  z-index: 1;
+  position: relative;
 }
+
+.image-preview {
+  pointer-events: none; /* Preview doesn't interfere with mouse events */
+  border-radius: 4px; 
+  background: rgba(0, 0, 0, 0.4); 
+  padding: 5px 5px 2px; /* Adds spacing around preview */
+  z-index: 3;
+}
+
+
 
 .card-info {
   background-color: hsla(201, 10%, 5%, 0.65);
@@ -31,6 +42,7 @@
   padding: 15px 1.5rem;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .proj-title-category {

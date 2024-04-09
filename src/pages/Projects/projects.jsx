@@ -22,6 +22,7 @@ function Projects() {
       <button onClick={() => handleFilterChange('Web Designs')}>Web Designs</button>
       <div id='neon-line'></div>
       {/* More buttons */}
+      {/* Go to Project Cards component to style the cards */}
       <div className="cards-container">
         {ProjData
           .filter(projCard => filter === 'all' || projCard.category === filter)
@@ -40,9 +41,3 @@ function Projects() {
 }
 
 export default Projects;
-
-
-
-
-
-

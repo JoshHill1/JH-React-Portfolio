@@ -19,7 +19,7 @@
   border: none;
   border-radius: 7px;
   padding: 10px;
-  margin: 30px 10px;
+  margin: 30px 10px 6px;
   color: var(--secondaryColor);
   font-weight: 600;
   font-size: 1.05rem;
@@ -34,7 +34,7 @@
 
 #neon-line {
   width: 1280px;
-  height: 3px;
+  height: 1px;
   background: linear-gradient(
     90deg,
     transparent,

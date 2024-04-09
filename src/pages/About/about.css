@@ -26,7 +26,7 @@
   background: linear-gradient(
     60deg,
     hsl(31, 85%, 77%),
-    hsl(60, 85%, 77%),
+    var(--gold),
     hsl(31, 85%, 77%)
   );
   background-clip: text;
@@ -48,4 +48,3 @@
   line-height: 2.2rem;
   text-align: center;
 }
-

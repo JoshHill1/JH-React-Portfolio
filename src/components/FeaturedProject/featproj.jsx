@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 import './featproj.css'
 
@@ -36,6 +37,7 @@ function FeatProj({ projData }) {
           <h4>{currentProject.category}</h4>
         </div>
         <p>{currentProject.subtext}</p>
+        <Link to={`/projects/${currentProject.id }`}>More about this project</Link>
       </div>
       <div className="featured feat-carousel">
         <IoIosArrowBack onClick={previousProject} className='arrow arrow-left'/>
