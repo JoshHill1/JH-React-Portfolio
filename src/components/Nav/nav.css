@@ -143,3 +143,15 @@
     opacity: 1;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 8px 1%; 
+    justify-content: center;
+  }
+  
+  .navbar-container h1, .JHill {
+    display: none;
+  }
+}

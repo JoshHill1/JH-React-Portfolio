@@ -60,3 +60,25 @@
   width: 60%;
   color: var(--accent);
 }
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 300px;
+  }
+
+  .card-info {
+    height: fit-content;
+  }
+
+  .proj-title-category h2 {
+    font-size: 1rem;
+  }
+  .proj-title-category h3 {
+    font-size: 0.6rem;
+  }
+
+  .card-info .card-subtext, .image-preview {
+    display: none;
+  }
+}

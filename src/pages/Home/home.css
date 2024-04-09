@@ -63,6 +63,7 @@
 }
 
 .left-of-homep button {
+  color: #000;
   border: none;
   width: fit-content;
   font-weight: 600;
@@ -161,4 +162,26 @@
   font-weight: 600;
   font-size: 1.55rem;
   color: var(--secondaryColor);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #flex-for-homep {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+
+  .left-of-homep p {
+    text-align: center;
+  }
+  .left-of-homep {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  #imatextflex {
+    margin-left: 0;
+  }
+  
 }
