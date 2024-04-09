@@ -23,7 +23,7 @@ function About() {
       <div className="quote-text">
         <p>"I want people to know me for my attention to detail. I like to look at the little things and turn it into something bigger than it is when someone views the page. I want to work with a team that is passionate about making appealing design experiences or applications that use industry standard technology and best practices to make an idea come to life!"</p>
       </div>
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 }
