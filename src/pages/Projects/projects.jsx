@@ -28,7 +28,7 @@ function Projects() {
           .filter(projCard => filter === 'all' || projCard.category === filter)
           .map(projCard => (
             <ProjectCards
-              key={projCard.id}
+              id={projCard.id}
               imageSrc={projCard.imageSrc}
               title={projCard.title}
               category={projCard.category}

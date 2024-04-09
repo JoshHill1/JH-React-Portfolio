@@ -46,7 +46,7 @@ function FeatProj({ projData }) {
         <div className="indicators">
           {featuredProjects.map((_, index) => (
             <button
-              key={index}
+              id={index}
               onClick={() => goToProject(index)}
               className={`indicator ${currentIndex === index ? 'indicator-inactive' : ''}`}
               aria-label={`Go to project ${index + 1}`} >

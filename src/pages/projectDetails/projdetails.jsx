@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import projData from '../../data/projData'; 
+import './projdetails.css'
 
 function ProjectDetails() {
   let { projectId } = useParams();
@@ -17,7 +18,7 @@ function ProjectDetails() {
   }
 
   return (
-    <div>
+    <div className='projdetailsp'>
       <h1>{project.title}</h1>
       <img src={project.imageSrc} alt={project.title} />
       <p>{project.subtext}</p>

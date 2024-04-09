@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+// css imported in projects.jsx folder
 
-function ProjectCards({ imageSrc, title, category, subtext }) {
+function ProjectCards({ imageSrc, title, category, subtext, id }) {
   // State for tracking hover status and cursor position
   const [isHovering, setIsHovering] = useState(false);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -20,15 +21,16 @@ function ProjectCards({ imageSrc, title, category, subtext }) {
 
   return (
     <div className="card">
-      
-      <img 
-        src={imageSrc} 
-        alt={title} 
-        className="card-image" 
-        onMouseMove={handleMouseMove}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      />
+      <Link to={`/projects/${id}`}>
+        <img 
+          src={imageSrc} 
+          alt={title} 
+          className="card-image" 
+          onMouseMove={handleMouseMove}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+      </Link>
       {/* Image preview */}
       {isHovering && (
         <div 

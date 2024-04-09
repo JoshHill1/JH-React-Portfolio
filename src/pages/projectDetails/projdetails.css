@@ -1,0 +1,22 @@
+.projdetailsp {
+  margin: 150px 10%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projdetailsp h1 {
+  text-align: center;
+}
+
+.projdetailsp img {
+  max-width: 100%;
+  max-height: calc(100vh - 80px);
+}
+
+.projdetailsp p {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}

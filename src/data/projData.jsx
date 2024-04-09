@@ -13,7 +13,7 @@ const projData = [
     category: "Digital Art",
     imageSrc: Walkin,
     title: "WalkIn'",
-    subtext: "For some odd reason, this idea came to my head where I made a play on words. I thought of someone walk in, walkin'... cool, sexy, happy, etc. Whatever it is, one can say they're walking art for the way they dress. The idea stuck to me and the design came to life.",
+    subtext: "For some odd reason, this idea came to my head where I made a play on words. I thought of someone walking in, walkin'... cool, sexy, happy, etc. Whatever it is, one can say they're walking art for the way they dress. The idea stuck to me and the design came to life.",
     featured: false
   },
   {
