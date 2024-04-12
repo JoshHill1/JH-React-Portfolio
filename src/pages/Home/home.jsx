@@ -12,16 +12,16 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className="homep">
-      <h1>Hi, I'm Josh</h1>
+      <h1 className='outfit-font'>Hi, I'm Josh</h1>
       <div id="flex-for-homep">
         <div className="left-of-homep">
           <h2 id="DigitalCreator">
             A Digital Creator.
           </h2>
-          <p>
+          <p className='outfit-font'>
             With a passion for web design, my interests also revolve around staying in the loop with trends involving Adobe Photoshop & Illustrator and following best practices for UX/UI. As a former gamer, I bring the same excitement and innovation to my work. I'm eager to explore new challenges and collaborate with teams who share my passion for making the digital world more beautiful and accessible.
           </p>
-          <Link to="/projects" className='my-work-btn'><button>View My Work</button></Link>
+          <Link to="/projects" className='my-work-btn'><button className='outfit-font-bold'>View My Work</button></Link>
         </div>
         <div className="right-of-homep">
           <div className="me-and-social-btns">

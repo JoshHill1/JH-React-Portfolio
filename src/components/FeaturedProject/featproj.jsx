@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
+import '../../index.css'
 import './featproj.css'
 
 function FeatProj({ projData }) {
@@ -31,13 +32,13 @@ function FeatProj({ projData }) {
   return (
     <div id="whole-featured-projects-section">
       <div className="featured feat-text">
-        <h2>Featured Projects</h2>
+        <h2 className='hedvig-letters'>Featured <br /> Projects</h2>
         <div id="feat-text-grouped">
-          <h3>{currentProject.title}</h3>
+          <h3 className='outfit-font'>{currentProject.title}</h3>
           <h4>{currentProject.category}</h4>
         </div>
-        <p>{currentProject.subtext}</p>
-        <Link to={`/projects/${currentProject.id }`} className='my-work-btn'><button>More about this project</button></Link>
+        <p className='outfit-font'>{currentProject.subtext}</p>
+        <Link to={`/projects/${currentProject.id }`} className='my-work-btn'>More about this project</Link>
       </div>
       <div className="featured feat-carousel">
         <IoIosArrowBack onClick={previousProject} className='arrow arrow-left'/>

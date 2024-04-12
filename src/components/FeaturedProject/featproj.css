@@ -8,7 +8,8 @@
   border: 1px solid var(--accent);
   border-radius: 7px;
   margin: 10px;
-  padding: 20px 40px;
+  padding: 20px 30px;
+  height: 625px;
 }
 .featured:nth-of-type(2) {
   border: none;
@@ -17,13 +18,18 @@
 .feat-text {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   color: var(--accent);
 }
 
 .feat-text h2 {
   font-size: 4.8rem;
   padding-bottom: 100px;
+}
+.hedvig-letters {
+  font-family: "Hedvig Letters Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #feat-text-grouped {
@@ -42,33 +48,33 @@
   font-size: 1.2rem;
 }
 
-.featured .my-work-btn {
+.feat-text .my-work-btn {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
   background-color: var(--secondaryColor);
   padding: 12px 20px;
   border-radius: 7px;
   width: fit-content;
 }
-.featured a {
+.feat-text a {
   text-decoration: none;
   color: var(--primaryColor);
+  color: #000;
 }
-.featured button {
+.feat-text button {
   background-color: var(--secondaryColor);
   font-size: 1.05rem;
 }
 
-.featured button {
-  color: #000;
+.feat-text button {
   border: none;
   width: fit-content;
-  font-weight: 600;
   pointer-events: none;
 }
 
 
 .feat-carousel {
   width: auto;
-  height: 610px;
   padding: 0;
   overflow: hidden;
   /* position relative helps with the arrows and indicator(s) always be in the correct position no matter the screen size */
@@ -117,7 +123,7 @@
   width: 100%;
   justify-content: center;
   filter: drop-shadow(0px 3px 5px #000);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .indicator {

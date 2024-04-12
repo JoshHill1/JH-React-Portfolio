@@ -56,10 +56,10 @@ function ProjectCards({ id, imageSrc, title, category, subtext }) {
 
       <div className="card-info">
         <div className="proj-title-category">
-          <h2 className="card-title">{title}</h2>
-          <h3 className="card-category">{category}</h3>
+          <h2 className="card-title hedvig-letters">{title}</h2>
+          <h3 className="card-category outfit-font-bold">{category}</h3>
         </div>
-        <p className="card-subtext">{subtext}</p>
+        <p className="card-subtext space-mono-regular">{subtext}</p>
       </div>
     </div>
   );

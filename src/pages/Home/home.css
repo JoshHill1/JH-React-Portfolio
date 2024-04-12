@@ -8,6 +8,12 @@
   text-align: center;
   margin-top: 150px;
 }
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 #flex-for-homep {
   color: #FFF;
@@ -41,9 +47,9 @@
 
 .left-of-homep p {
   text-align: left;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.8rem;
+  font-size: 1.234rem;
+  font-weight: 400;
+  line-height: 2rem;
   padding-bottom: 25px;
 }
 
@@ -68,6 +74,12 @@
   width: fit-content;
   font-weight: 600;
   pointer-events: none;
+}
+.outfit-font-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 
