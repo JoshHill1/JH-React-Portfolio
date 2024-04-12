@@ -37,7 +37,7 @@ function FeatProj({ projData }) {
           <h4>{currentProject.category}</h4>
         </div>
         <p>{currentProject.subtext}</p>
-        <Link to={`/projects/${currentProject.id }`}>More about this project</Link>
+        <Link to={`/projects/${currentProject.id }`} className='my-work-btn'><button>More about this project</button></Link>
       </div>
       <div className="featured feat-carousel">
         <IoIosArrowBack onClick={previousProject} className='arrow arrow-left'/>
@@ -46,7 +46,7 @@ function FeatProj({ projData }) {
         <div className="indicators">
           {featuredProjects.map((_, index) => (
             <button
-              id={index}
+              key={index}
               onClick={() => goToProject(index)}
               className={`indicator ${currentIndex === index ? 'indicator-inactive' : ''}`}
               aria-label={`Go to project ${index + 1}`} >

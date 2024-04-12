@@ -21,13 +21,13 @@ function Projects() {
       <button onClick={() => handleFilterChange('Digital Art')}>Digital Art</button>
       <button onClick={() => handleFilterChange('Web Designs')}>Web Designs</button>
       <div id='neon-line'></div>
-      {/* More buttons */}
       {/* Go to Project Cards component to style the cards */}
       <div className="cards-container">
         {ProjData
           .filter(projCard => filter === 'all' || projCard.category === filter)
           .map(projCard => (
             <ProjectCards
+              key={projCard.id}
               id={projCard.id}
               imageSrc={projCard.imageSrc}
               title={projCard.title}

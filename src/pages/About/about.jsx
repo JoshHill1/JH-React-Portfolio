@@ -1,4 +1,5 @@
 import "./about.css";
+import "../../index.css";
 import JoshBodyPhoto from "../../assets/aboutContent/JoshBodyPhoto1.png"
 import OnlyOneInBuilding from "../../assets/aboutContent/OnlyOneInBuilding.mov"
 import WebAuthFinal from "../../assets/aboutContent/WebAuthFinal.png"

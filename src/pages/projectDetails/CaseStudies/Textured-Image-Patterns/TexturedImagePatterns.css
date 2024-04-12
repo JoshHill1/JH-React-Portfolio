@@ -1,0 +1,22 @@
+.init-proj-content {
+  margin: 150px 10%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.init-proj-content h1 {
+  text-align: center;
+}
+
+.init-proj-content img {
+  max-width: 100%;
+  max-height: calc(100vh - 80px);
+}
+
+.init-proj-content p {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}

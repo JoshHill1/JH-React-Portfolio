@@ -9,7 +9,7 @@ import MindOverload from "../assets/images/projImages/MindOverload/RefracturedFi
 
 const projData = [
   {
-    id: 7,
+    id: 'WalkIn',
     category: "Digital Art",
     imageSrc: Walkin,
     title: "WalkIn'",
@@ -17,7 +17,7 @@ const projData = [
     featured: false
   },
   {
-    id: 6,
+    id: 'Mind-Overload',
     category: "Digital Art",
     imageSrc: MindOverload,
     title: "Mind Overload",
@@ -25,7 +25,7 @@ const projData = [
     featured: true
   },
   {
-    id: 5,
+    id: 'Secrets-of-the-Universe',
     category: "Digital Art",
     imageSrc: UniverseSecrets,
     title: "Secrets of the Universe",
@@ -33,15 +33,15 @@ const projData = [
     featured: false
   },
   {
-    id: 4,
+    id: 'Textured-Image-Patterns',
     category: "Digital Art",
     imageSrc: TexturedImages,
-    title: "Textured Images",
+    title: "Textured Image Patterns",
     subtext: "This was a fun and interesting project I did after discovering how to make patterns in Photoshop and changing the way images look with the texture. Some have a more grunge look to them while some look more pixelated. Either way, it was still fun to experiment what other patterns to come up with.",
     featured: false
   },
   { 
-    id: 3, 
+    id: 'Plain-And-Simple', 
     category: "Digital Art", 
     imageSrc: PlainAndSimpleFINAL, 
     title: "PLAIN AND SIMPLE", 
@@ -49,7 +49,7 @@ const projData = [
     featured: true
   },
   { 
-    id: 2, 
+    id: 'Food-Maker-App', 
     category: "Web Designs", 
     imageSrc: FoodMakerApp, 
     title: "Food Maker App", 
@@ -57,7 +57,7 @@ const projData = [
     featured: false
   },
   { 
-    id: 1, 
+    id: 'First-Portfolio', 
     category: "Web Designs", 
     imageSrc: HTMLPortfolio, 
     title: "HTML Portfolio", 

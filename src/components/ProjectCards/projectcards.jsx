@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+
+// Import data to get the link working when user clicks on image
+import projData from '../../data/projData.jsx'
+
+// Added in order to solve console log warning about child element not having key
+import '../../pages/Projects/projects.jsx'
 // css imported in projects.jsx folder
 
-function ProjectCards({ imageSrc, title, category, subtext, id }) {
+function ProjectCards({ id, imageSrc, title, category, subtext }) {
   // State for tracking hover status and cursor position
   const [isHovering, setIsHovering] = useState(false);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -21,16 +27,18 @@ function ProjectCards({ imageSrc, title, category, subtext, id }) {
 
   return (
     <div className="card">
-      <Link to={`/projects/${id}`}>
-        <img 
-          src={imageSrc} 
-          alt={title} 
-          className="card-image" 
-          onMouseMove={handleMouseMove}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
-      </Link>
+      {projData.map(() => (
+        <Link to={`/projects/${id}`}>
+          <img 
+            src={imageSrc} 
+            alt={title} 
+            className="card-image" 
+            onMouseMove={handleMouseMove}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        </Link>
+      ))}
       {/* Image preview */}
       {isHovering && (
         <div 

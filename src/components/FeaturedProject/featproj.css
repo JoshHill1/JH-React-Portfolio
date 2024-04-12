@@ -35,16 +35,40 @@
 }
 #feat-text-grouped h4 {
   font-size: 1.2rem;
-  padding-bottom: 20px;
   color: var(--secondaryColor);
 }
 .feat-text p {
+  padding: 20px 0;
   font-size: 1.2rem;
 }
 
+.featured .my-work-btn {
+  background-color: var(--secondaryColor);
+  padding: 12px 20px;
+  border-radius: 7px;
+  width: fit-content;
+}
+.featured a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.featured button {
+  background-color: var(--secondaryColor);
+  font-size: 1.05rem;
+}
+
+.featured button {
+  color: #000;
+  border: none;
+  width: fit-content;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+
 .feat-carousel {
   width: auto;
-  height: 600px;
+  height: 610px;
   padding: 0;
   overflow: hidden;
   /* position relative helps with the arrows and indicator(s) always be in the correct position no matter the screen size */

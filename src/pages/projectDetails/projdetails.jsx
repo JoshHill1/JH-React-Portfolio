@@ -1,29 +1,22 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
-import projData from '../../data/projData'; 
+
+import ProjectComponents from './projectdetails-data'; 
 import './projdetails.css'
 
-function ProjectDetails() {
-  let { projectId } = useParams();
-  const [project, setProject] = useState(null);
+function ProjectDetail() {
+  const { id } = useParams();
+  const ProjectComponent = ProjectComponents[id];
 
-  useEffect(() => {
-    const foundProject = projData.find(p => p.id.toString() === projectId);
-    setProject(foundProject);
-  }, [projectId]); 
-
-
-  if (!project) {
-    return <div>Project not found</div>;
+  if (!ProjectComponent) {
+    return <div className='error-page-styling error-height'>
+      <h1>Project not found.</h1>
+      <p>There was either an error or the page for this project is not done yet.</p>
+    </div>;
   }
 
-  return (
-    <div className='projdetailsp'>
-      <h1>{project.title}</h1>
-      <img src={project.imageSrc} alt={project.title} />
-      <p>{project.subtext}</p>
-    </div>
-  );
+  // Use the component, not the ProjectComponents object
+  return <ProjectComponent />;
 }
 
-export default ProjectDetails;
+export default ProjectDetail;

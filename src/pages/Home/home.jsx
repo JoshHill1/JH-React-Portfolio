@@ -1,6 +1,7 @@
 import React from 'react';
 
 import "./home.css";
+import "../../index.css";
 import ImAText from "../../components/ImAText/imatext.jsx"
 import JHeadshot from '../../assets/images/JHeadshot.png'
 import FeatProj from "../../components/FeaturedProject/featproj.jsx";
