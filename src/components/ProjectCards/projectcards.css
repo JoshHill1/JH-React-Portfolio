@@ -87,8 +87,14 @@
     height: fit-content;
   }
 
+  .proj-title-category {
+    line-height: 1rem;
+    width: fit-content;
+  }
+  
   .proj-title-category h2 {
     font-size: 1rem;
+    line-height: 1rem;
   }
   .proj-title-category h3 {
     font-size: 0.6rem;

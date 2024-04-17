@@ -1,22 +1,41 @@
-.init-proj-content {
+.WalkInPage {
   margin: 150px 10%;
   color: #FFF;
+}
+
+.WalkIn-init-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.init-proj-content h1 {
+.WalkIn-init-content h1 {
   text-align: center;
 }
 
-.init-proj-content img {
+.WalkIn-init-content p {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.WalkIn-init-content img {
   max-width: 100%;
   max-height: calc(100vh - 80px);
 }
 
-.init-proj-content p {
-  padding: 10px 0;
-  text-align: center;
-  font-size: 1.5rem;
+
+#WalkIn-explanation img {
+  width: 40%;
+}
+#WalkIn-explanation video {
+  width: 60%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .WalkIn-init-content p {
+    display: block;
+  }
 }

@@ -61,7 +61,7 @@ const projData = [
     category: "Web Designs", 
     imageSrc: HTMLPortfolio, 
     title: "HTML Portfolio", 
-    subtext: "This is my first actual portfolio I make using vanilla HTML, CSS, and JavaScript. It helped me learn more about CSS and how to work around the framework that I was looking for, and was a great learning experience before starting this React Portfolio.",
+    subtext: "This is my first actual portfolio I made using vanilla HTML, CSS, and JavaScript. It helped me learn more about CSS and how to work around the framework that I was looking for, and was a great learning experience before starting this React Portfolio.",
     featured: true
   },
   

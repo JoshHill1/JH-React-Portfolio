@@ -11,7 +11,7 @@ function ProjectDetail() {
   if (!ProjectComponent) {
     return <div className='error-page-styling error-height'>
       <h1>Project not found.</h1>
-      <p>There was either an error or the page for this project is not done yet.</p>
+      <p>There was either an error or the page for this project does not exist.</p>
     </div>;
   }
 
