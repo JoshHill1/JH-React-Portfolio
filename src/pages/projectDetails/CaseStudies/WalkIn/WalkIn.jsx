@@ -23,8 +23,7 @@ function WalkIn() {
         <p>It wasn't till after the trip, that I thought of the design. I wanted to have something to reference the walking figure off of, so I remembered the video I took and used that as my reference. Then, I sketched out the man, making it less thick and have more of a neck and chin, and then traced out the figure in Adobe Illustrator.</p>
         <img src={WalkInSketch} alt="A man in the middle of taking a walking step, sketched onto paper with a pencil" />
         <p>When it came to the text, I already had a font in mind for the Walkin' text. I left the "i" in lowercase because while I was making the project, I don't think the capitalized "I" looked good. I did however, slightly adjust the space between the k and the i to make it look a little more like "Walk" and "in'" are their own seperate words, but still close enough to make it look like it's all one word.</p>
-        <p>For the rest of the words, I chose which ones I liked and set a color to them. It was a little challenging to get the right size and manage the color for the text. I didn't want to overload one area and leave another area blank.</p>
-        <p>You might notice how behind the figure, there is one more word than there is in the front, or that it might seem more filled there, but then I added some assets behind the words to make the area more populated</p>
+        <p>For the rest of the words, I chose which ones I liked and set a color to them. It was a little challenging to get the right size and manage the color for the text. I didn't want to overload one area and leave another area blank. You might notice how behind the figure, there is one more word than there is in the front, or that it might seem more filled there, but then I added some assets behind the words to make the area more populated.</p>
       </div>
     </div>
   )

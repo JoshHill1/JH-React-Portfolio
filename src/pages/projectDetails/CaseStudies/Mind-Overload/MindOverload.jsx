@@ -3,7 +3,7 @@ import './MindOverload.css'
 // imported images
 import MindOverloadThumbnail from '../../../../assets/images/projImages/MindOverload/RefracturedFilter_MindOverloadFinal.png'
 import MindORef1 from '../../../../assets/images/projImages/MindOverload/EEAAO-SS.png'
-import MindORef2 from '../../../../assets/images/projImages/MindOverload/EEAAO-SS1.png'
+import MindORef from '../../../../assets/images/projImages/MindOverload/EEAAO-SS1.png'
 import ColorMap from '../../../../assets/images/projImages/MindOverload/ColorMap.png'
 
 function MindOverload() {
@@ -22,8 +22,8 @@ function MindOverload() {
         <p>When thinking about what I wanted to use the filter on, I wanted the filter to fit with the words I show. I really wanted to watch the movie Everything Everywhere All At Once &#40;for the sixth time&#41; so it gave me a reason to watch it and get the images I wanted for this. After getting two frames from the film, I started my project file.</p>
         <h3>Why not just one frame from the film?</h3>
         <p>Well, I tried to find one good frame to use but basically, to get the best quality and the look I was going for, I had to get multiple frames. Below are the frames I used and edited in the project:</p>
+        <img src={MindORef} alt='A frame from the movie I reference' />
         <img src={MindORef1} alt='A frame from the movie I reference' />
-        <img src={MindORef2} alt='A frame from the movie I reference' />
         <h2>Color Scheme:</h2>
         <p>At the beginning of the design and even after trial and error of starting the design, I didn't land on the color choice untill I look up some images for inspiration. It wasn't long till I came across this photo and knew that it would work well with the project.</p>
         <img src={ColorMap} alt='A part of an image of the cover of the movie I reference, with a primary light red color, and secondary tan beige color.' />
